@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class UtilsTest {
+class UtilsTest {
 
   @Test
   @DisplayName("3자리 문자열 토큰 발급")

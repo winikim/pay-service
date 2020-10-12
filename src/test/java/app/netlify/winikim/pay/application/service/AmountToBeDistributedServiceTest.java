@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-public class AmountToBeDistributedServiceTest {
+class AmountToBeDistributedServiceTest {
 
   @Mock
   private AmountToBeDistributedRepository amountToBeDistributedRepository;
@@ -33,7 +33,7 @@ public class AmountToBeDistributedServiceTest {
 
   @Test
   @DisplayName("금액 뿌리기 서비스")
-  public void distributeAmount() {
+  void distributeAmount() {
     // given
     final String roomId = "room";
     final Long userId = 1L;
@@ -51,7 +51,7 @@ public class AmountToBeDistributedServiceTest {
         .distributeAmount(distributingAmountRequest, roomId, userId);
 
     // then
-    Assertions.assertEquals(tokenResponse.getToken().length(), 3);
+    Assertions.assertEquals(3, tokenResponse.getToken().length());
   }
 
   @Test

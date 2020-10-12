@@ -3,8 +3,6 @@ package app.netlify.winikim.pay.domain.entity;
 import app.netlify.winikim.pay.domain.constant.ErrorCode;
 import app.netlify.winikim.pay.domain.exception.CustomIllegalArgumentException;
 import app.netlify.winikim.pay.domain.exception.NotEnoughAmountException;
-import java.time.Duration;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -139,7 +137,7 @@ public class AmountToBeDistributed extends BaseTimeEntity {
 
   // 뿌린 금액 받아가기
   public DistributedAmount receiveDistributedAmount(Long requestUserId) {
-    if (this.distributedAmountList.size() == 0) {
+    if (this.distributedAmountList.isEmpty()) {
       throw new NotEnoughAmountException(ErrorCode.NON_EXISTENCE_DISTRIBUTED_AMOUNT);
     }
     for (DistributedAmount distributedAmount : this.distributedAmountList) {

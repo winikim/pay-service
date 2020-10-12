@@ -1,6 +1,5 @@
 package app.netlify.winikim.pay.domain.logic;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import app.netlify.winikim.pay.domain.constant.ErrorCode;
 import app.netlify.winikim.pay.domain.entity.AmountToBeDistributed;

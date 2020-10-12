@@ -1,16 +1,15 @@
 package app.netlify.winikim.pay.application.dto;
 
 import app.netlify.winikim.pay.domain.entity.ReceivedUser;
-import java.math.BigDecimal;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
-import org.springframework.format.annotation.DateTimeFormat;
 
 @Getter
 public class AmountToBeDistributedResponse {
-  @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
   private final LocalDateTime dateTimeOfDistributedAmount;
   private final Long amountToBeDistributed;
   private final Long completedToDistributedAmount;

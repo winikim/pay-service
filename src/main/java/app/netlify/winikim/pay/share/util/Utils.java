@@ -1,7 +1,10 @@
 package app.netlify.winikim.pay.share.util;
 
 import java.util.Random;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Utils {
 
   public static String generateToken(int length) {

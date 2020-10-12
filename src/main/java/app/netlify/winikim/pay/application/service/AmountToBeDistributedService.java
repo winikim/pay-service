@@ -21,7 +21,7 @@ public class AmountToBeDistributedService {
 
   private final AmountToBeDistributedRepository amountToBeDistributedRepository;
   private final PermissionService permissionService;
-  private final static int RETRY_COUNT_GENERATE_TOKEN = 5;
+  private static final int RETRY_COUNT_GENERATE_TOKEN = 5;
 
   /**
    * 머니 뿌리기

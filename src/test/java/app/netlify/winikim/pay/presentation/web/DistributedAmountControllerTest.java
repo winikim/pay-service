@@ -1,19 +1,13 @@
 package app.netlify.winikim.pay.presentation.web;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
-import app.netlify.winikim.pay.application.dto.DistributingAmountRequest;
-import app.netlify.winikim.pay.application.service.AmountToBeDistributedService;
 import app.netlify.winikim.pay.application.service.DistributedAmountService;
-import app.netlify.winikim.pay.domain.entity.AmountToBeDistributed;
 import app.netlify.winikim.pay.domain.entity.DistributedAmount;
 import app.netlify.winikim.pay.domain.entity.DistributedAmountTest;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
