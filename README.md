@@ -20,7 +20,9 @@
 -----------------------------------------
 
 ## 빌드 된 파일 다운로드
-URL: https://drive.google.com/file/d/1bOJ2t5fhg7_3h68X46bSlPqy8L9wpT_I/view?usp=sharing
+URL: https://drive.google.com/file/d/1bOJ2t5fhg7_3h68X46bSlPqy8L9wpT_I/view?usp=sharing                     
+다운로드 후 해당 파일을 실행
+실행명령어: java -jar pay-0.0.1-SNAPSHOT.jar
 
 -----------------------------------------
 ## 핵심 문제해결 전략
