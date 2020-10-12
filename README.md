@@ -3,6 +3,7 @@
 1. jdk8 이상 필요.
 2. maven 필요. (Apache Maven 3.6.3 에서 진행함)
 
+
 ## 빌드 및 실행
 ```
 1. git clone https://github.com/winikim/pay-service.git
@@ -16,7 +17,12 @@
 -> jdbcURL:jdbc:h2:mem:pay
 -> id: sa, password: 없음
 ```
-------------------------
+-----------------------------------------
+
+## 빌드 된 파일 다운로드
+URL: https://drive.google.com/file/d/1bOJ2t5fhg7_3h68X46bSlPqy8L9wpT_I/view?usp=sharing
+
+-----------------------------------------
 ## 핵심 문제해결 전략
 ```
 1. Spring boot 사용
