@@ -13,7 +13,7 @@
 7. java -jar pay-0.0.1-SNAPSHOT.jar
 8. h2 console 경로            
 -> http://127.0.0.1:8080/h2
--> jdbcURL:  jdbc:h2:~/pay
+-> jdbcURL:jdbc:h2:mem:pay
 -> id: sa, password: 없음
 ```
 ------------------------
